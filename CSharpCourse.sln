@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualMethods", "VirtualMe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstracts", "Abstracts\Abstracts.csproj", "{44681105-8E43-4138-B180-D46D0AA673C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recap Demo 2", "Recap Demo 2\Recap Demo 2.csproj", "{7C1384BF-A719-4FF9-AA5D-6B9249F46410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiers", "AccessModifiers\AccessModifiers.csproj", "{DF4CC32E-DEE4-4AC7-9333-820DC00A1647}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{44681105-8E43-4138-B180-D46D0AA673C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44681105-8E43-4138-B180-D46D0AA673C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44681105-8E43-4138-B180-D46D0AA673C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C1384BF-A719-4FF9-AA5D-6B9249F46410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C1384BF-A719-4FF9-AA5D-6B9249F46410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C1384BF-A719-4FF9-AA5D-6B9249F46410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C1384BF-A719-4FF9-AA5D-6B9249F46410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4CC32E-DEE4-4AC7-9333-820DC00A1647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4CC32E-DEE4-4AC7-9333-820DC00A1647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4CC32E-DEE4-4AC7-9333-820DC00A1647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4CC32E-DEE4-4AC7-9333-820DC00A1647}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
