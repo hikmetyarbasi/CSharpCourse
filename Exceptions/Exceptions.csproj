@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{841D4AFD-093A-44C0-A612-76B18045AA5A}</ProjectGuid>
+    <ProjectGuid>{39B7037F-B0FD-4222-8761-0A97192FF185}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AccessModifierDemo</RootNamespace>
-    <AssemblyName>AccessModifierDemo</AssemblyName>
+    <RootNamespace>Exceptions</RootNamespace>
+    <AssemblyName>Exceptions</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,15 +44,10 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordNotFound.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AccessModifiers\AccessModifiers.csproj">
-      <Project>{df4cc32e-dee4-4ac7-9333-820dc00a1647}</Project>
-      <Name>AccessModifiers</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
