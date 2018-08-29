@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypesAndVariables", "TypesAndVariables\TypesAndVariables.csproj", "{ED88C484-4EBA-4333-8C57-63C4B75CDBA1}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{39B7037F-B0FD-4222-8761-0A97192FF185}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetDemo", "AdoNetDemo\AdoNetDemo.csproj", "{BCAC0688-B8D5-4802-9CF3-8B8C7F5A1AC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkDemo", "EntityFrameworkDemo\EntityFrameworkDemo.csproj", "{A5BBFF89-0812-4C98-AEB2-940CF2C8EEE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{BCAC0688-B8D5-4802-9CF3-8B8C7F5A1AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCAC0688-B8D5-4802-9CF3-8B8C7F5A1AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCAC0688-B8D5-4802-9CF3-8B8C7F5A1AC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5BBFF89-0812-4C98-AEB2-940CF2C8EEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5BBFF89-0812-4C98-AEB2-940CF2C8EEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5BBFF89-0812-4C98-AEB2-940CF2C8EEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5BBFF89-0812-4C98-AEB2-940CF2C8EEE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
