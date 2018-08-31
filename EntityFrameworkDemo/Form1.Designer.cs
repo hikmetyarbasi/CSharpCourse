@@ -47,6 +47,10 @@
             this.lblName = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dgwProducts = new System.Windows.Forms.DataGridView();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnGetByID = new System.Windows.Forms.Button();
+            this.txtGetById = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.gbProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProducts)).BeginInit();
@@ -63,7 +67,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(526, 6);
+            this.btnDelete.Location = new System.Drawing.Point(18, 12);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 13;
@@ -230,11 +234,50 @@
             this.dgwProducts.TabIndex = 11;
             this.dgwProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProducts_CellClick);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(430, 11);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 15;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(511, 13);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(100, 20);
+            this.txtSearch.TabIndex = 16;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // btnGetByID
+            // 
+            this.btnGetByID.Location = new System.Drawing.Point(169, 12);
+            this.btnGetByID.Name = "btnGetByID";
+            this.btnGetByID.Size = new System.Drawing.Size(75, 23);
+            this.btnGetByID.TabIndex = 17;
+            this.btnGetByID.Text = "GetById";
+            this.btnGetByID.UseVisualStyleBackColor = true;
+            this.btnGetByID.Click += new System.EventHandler(this.btnGetByID_Click);
+            // 
+            // txtGetById
+            // 
+            this.txtGetById.Location = new System.Drawing.Point(250, 14);
+            this.txtGetById.Name = "txtGetById";
+            this.txtGetById.Size = new System.Drawing.Size(100, 20);
+            this.txtGetById.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(628, 391);
+            this.Controls.Add(this.txtGetById);
+            this.Controls.Add(this.btnGetByID);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbProduct);
@@ -249,6 +292,7 @@
             this.gbProduct.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProducts)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -273,6 +317,10 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dgwProducts;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnGetByID;
+        private System.Windows.Forms.TextBox txtGetById;
     }
 }
 

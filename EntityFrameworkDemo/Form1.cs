@@ -17,13 +17,21 @@ namespace EntityFrameworkDemo
         {
             InitializeComponent();
         }
-      
+
 
         private void GetProductList()
         {
             dgwProducts.DataSource = _prodcDal.GetAll();
         }
+        private void GetProductByName(string key)
+        {
+            dgwProducts.DataSource = _prodcDal.SearchAll(key);
+        }
 
+        private void GetProductById(Int32 Id)
+        {
+            dgwProducts.DataSource =new List<Product>() { _prodcDal.GetById(Id) };
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             _prodcDal.Add(new Product()
@@ -66,6 +74,21 @@ namespace EntityFrameworkDemo
         private void Form1_Load(object sender, EventArgs e)
         {
             GetProductList();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            GetProductByName(txtSearch.Text);
+        }
+
+        private void btnGetByID_Click(object sender, EventArgs e)
+        {
+            GetProductById(Convert.ToInt32(txtGetById.Text));
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            GetProductByName(txtSearch.Text);
         }
     }
 }
