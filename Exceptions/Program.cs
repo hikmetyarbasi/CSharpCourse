@@ -12,6 +12,56 @@ namespace Exceptions
         {
             //ExceptionIntro();
 
+            //TryCatch();
+
+            //ActionDemo();
+
+            //Delege olarak düşünülebilen ve dönüş tipi olan nesnelerdir.
+
+
+            //FuncDemo();
+
+            Console.ReadLine();
+        }
+            
+        private static void FuncDemo()
+        {
+            Func<int, int, int> func = Topla;
+            func += Carp;
+
+            Func<int, int> func2 = a => a;
+
+            Func<int> func3 = delegate() { return new Random().Next(1, 100); };
+
+            Func<int> func4 = () => new Random().Next(1, 100);
+
+            Console.WriteLine(func(4, 2));
+            Console.WriteLine(func2(2));
+            Console.WriteLine(func3());
+            Console.WriteLine(func4());
+        }
+
+        public static int Carp(int a, int b)
+        {
+            return a * b;
+        }
+
+        public static int Topla(int a, int b)
+        {
+            return a + b;
+        }
+
+        private static void ActionDemo()
+        {
+            //Action void dönüş tipi olan delegelerdir.
+            HandleException(() =>
+            {
+                Find();
+            });
+        }
+
+        private static void TryCatch()
+        {
             try
             {
                 Find();
@@ -23,16 +73,7 @@ namespace Exceptions
             catch (Exception exception)
             {
                 Console.WriteLine(exception.Message);
-
             }
-
-            HandleException(() =>
-            {
-                Find();
-            });
-
-
-            Console.ReadLine();
         }
 
         private static void HandleException(Action action)
